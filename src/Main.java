@@ -62,7 +62,7 @@ public class Main {
         Animal dog = new Dog();
         Animal cat = new Cat();
 
-        dog.sound();  // Hav hav
-        cat.sound();  // Miyav
+        dog.sound();
+        cat.sound();
     }
 }
