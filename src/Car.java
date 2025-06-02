@@ -1,25 +1,16 @@
-public class Car {
-    //encapsulation için private yaptım
+public class Car extends Vehicle {
     private String brand;
     private String model;
     private int year;
 
-
-//Constructor
+    // Constructor
     public Car(String brand, String model, int year) {
         this.brand = brand;
         this.model = model;
         this.year = year;
     }
 
-
-
-    // setter: veriyi değiştirme metodu
-    //getter: veriyi okuma metodu
-
-
-
-//get metotları encapsulation için
+    // Getter metodları
     public String getBrand() {
         return brand;
     }
@@ -32,7 +23,7 @@ public class Car {
         return year;
     }
 
-//setter encapsulation
+    // Setter metodları
     public void setBrand(String brand) {
         this.brand = brand;
     }
@@ -45,10 +36,11 @@ public class Car {
         this.year = year;
     }
 
-//bilgileri ekrana yazdırıyoruz
+    // Bilgileri ekrana yazdırma
     public void printInfo() {
         System.out.println("Marka: " + brand);
         System.out.println("Model: " + model);
         System.out.println("Yıl: " + year);
+        System.out.println("Hız: " + getSpeed() + " km/s");
     }
 }
