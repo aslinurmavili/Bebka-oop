@@ -56,5 +56,13 @@ public class Main {
 
         circle.draw();
         rectangle.draw();
+
+
+        //ınterface
+        Animal dog = new Dog();
+        Animal cat = new Cat();
+
+        dog.sound();  // Hav hav
+        cat.sound();  // Miyav
     }
 }
