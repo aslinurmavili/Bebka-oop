@@ -29,6 +29,16 @@ public class Main {
 
         System.out.println("Benzinli Araç Bilgileri:");
         gasCar.printInfo();
-        gasCar.start();
+        gasCar.start(); // GasCar’daki override metodu çalışır
+
+
+        //calculator
+        Calculator calc = new Calculator();
+
+        int sumTwo = calc.add(5, 10);           // İki parametreli metot çağrılır
+        int sumThree = calc.add(2, 4, 6);       // Üç parametreli metot çağrılır
+
+        System.out.println("İki sayının toplamı: " + sumTwo);
+        System.out.println("Üç sayının toplamı: " + sumThree);
     }
 }
