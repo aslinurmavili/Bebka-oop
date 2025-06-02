@@ -40,5 +40,9 @@ public class Main {
 
         System.out.println("İki sayının toplamı: " + sumTwo);
         System.out.println("Üç sayının toplamı: " + sumThree);
+
+        // Nesne oluşturmadan sınıf ismi ile doğrudan çağırıyoruz
+        int result = MathUtils.multiply(5, 7);
+        System.out.println("Çarpım sonucu: " + result);
     }
 }
