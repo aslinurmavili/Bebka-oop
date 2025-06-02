@@ -44,5 +44,10 @@ public class Main {
         // Nesne oluşturmadan sınıf ismi ile doğrudan çağırıyoruz
         int result = MathUtils.multiply(5, 7);
         System.out.println("Çarpım sonucu: " + result);
+
+//this ve super kullanımı
+        Student student = new Student("Ahmet", 21, "2023456");
+        student.printInfo();
+
     }
 }
