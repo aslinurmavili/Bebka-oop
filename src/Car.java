@@ -43,4 +43,9 @@ public class Car extends Vehicle {
         System.out.println("Yıl: " + year);
         System.out.println("Hız: " + getSpeed() + " km/s");
     }
+    // Override edilmiş start() metodu
+    @Override
+    public void start() {
+        System.out.println("Araba çalıştı, sürüşe hazır!");
+    }
 }

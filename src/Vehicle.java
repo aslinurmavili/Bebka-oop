@@ -8,4 +8,8 @@ public class Vehicle {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
+    // start() metodu
+    public void start() {
+        System.out.println("Araç çalışıyor...");
+    }
 }
