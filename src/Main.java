@@ -45,9 +45,16 @@ public class Main {
         int result = MathUtils.multiply(5, 7);
         System.out.println("Çarpım sonucu: " + result);
 
-//this ve super kullanımı
+        //this ve super kullanımı
         Student student = new Student("Ahmet", 21, "2023456");
         student.printInfo();
 
+
+        //Abstract Sınıf Kullanımı
+        Shape circle = new Circle();
+        Shape rectangle = new Rectangle();
+
+        circle.draw();
+        rectangle.draw();
     }
 }
