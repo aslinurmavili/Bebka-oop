@@ -66,5 +66,9 @@ public class Main {
         //Meyveseti
         MeyveSeti set = new MeyveSeti();
         set.yazdir();
+
+        //ogrenci notları
+        OgrenciNotlari ogrenciNotlari = new OgrenciNotlari();
+        ogrenciNotlari.yazdir();
     }
 }
