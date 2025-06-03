@@ -61,5 +61,10 @@ public class Main {
         // SehirListesi kullanımı
         SehirListesi liste = new SehirListesi();
         liste.yazdir();
+
+
+        //Meyveseti
+        MeyveSeti set = new MeyveSeti();
+        set.yazdir();
     }
 }
