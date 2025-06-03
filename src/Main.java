@@ -64,5 +64,10 @@ public class Main {
 
         dog.sound();
         cat.sound();
+
+
+        //enum
+        Gun bugun = Gun.CUMA;
+        System.out.println("Bugün günlerden: " + bugun);
     }
 }
