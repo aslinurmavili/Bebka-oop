@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -70,5 +71,26 @@ public class Main {
         //ogrenci notları
         OgrenciNotlari ogrenciNotlari = new OgrenciNotlari();
         ogrenciNotlari.yazdir();
+
+
+
+        //Bolme  işlemi
+        Scanner scanner = new Scanner(System.in);
+        BolmeIslemi islemler = new BolmeIslemi();
+
+        System.out.print("Birinci sayıyı girin: ");
+        int sayi1 = scanner.nextInt();
+
+        System.out.print("İkinci sayıyı girin: ");
+        int sayi2 = scanner.nextInt();
+
+        try {
+            int sonuc = islemler.bol(sayi1, sayi2);
+            System.out.println("Sonuç: " + sonuc);
+        } catch (ArithmeticException e) {
+            System.out.println("Hata: Bir sayı sıfıra bölünemez!");
+        }
+
+        scanner.close();
     }
 }
