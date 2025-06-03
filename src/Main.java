@@ -92,5 +92,38 @@ public class Main {
         }
 
         scanner.close();
+
+
+        // ArrayList
+        ArrayList<Integer> sayilar = new ArrayList<>();
+
+
+        sayilar.add(10);
+        sayilar.add(20);
+        sayilar.add(30);
+        sayilar.add(40);
+        sayilar.add(50);
+
+        // Lambda ifadesi ile forEach kullanımı
+        sayilar.forEach(sayi -> System.out.println(sayi));
+
+
+        //  Wrapper Sınıfları
+        int sayi = 16;
+
+
+        Integer sayiWrapper = sayi;
+
+        int sayiTekrar = sayiWrapper;
+
+
+        //Autoboxing: Java, int gibi primitive tipleri otomatik olarak Integer gibi nesneye çevirir.
+        //Unboxing: Integer gibi nesnelerden tekrar primitive tipe otomatik dönüş yapılır.
+
+        System.out.println("Orijinal int: " + sayi);
+        System.out.println("Integer (Wrapper): " + sayiWrapper);
+        System.out.println("Tekrar int (Unboxed): " + sayiTekrar);
+
     }
 }
+
